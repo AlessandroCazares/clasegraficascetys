@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pagina 3</title>
+  <style>
+      canvas {
+          border: 3px solid brown;
+          background-color: white;
+      }
+  </style>
+  <script>
+    window.onload=function() {
+        var canvas = document.getElementById("micanvas");
+        var context = canvas.getContext("2d");
+
+        context.fillStyle = 'green';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        context.fillStyle = 'cyan';
+        context.fillRect(0, 0, canvas.width, canvas.height-150);
+
+        // Casa
+        context.fillStyle = 'slategray';
+        context.fillRect(100, 300, 300, 200);
+        context.fillStyle = 'darkblue';
+        context.fillRect(75, 250, 350, 50);
+        context.fillRect(90, 140, 320, 110);
+        context.fillRect(125, 100, 250, 50);
+        // Entrada
+        context.fillStyle = '#222222';
+        context.fillRect(200, 400, 100, 100);
+        context.fillStyle = '#555555';
+        context.fillRect(200, 480, 100, 20);
+
+        // Árbol
+        context.fillStyle = 'saddlebrown';
+        context.fillRect(600, 350, 50, 150);
+        // Hojas
+        context.fillStyle = 'green';
+        context.fillRect(525, 300, 200, 50); // Lowest foliage
+        context.fillRect(550, 250, 150, 50); // Middle foliage
+        context.fillRect(575, 200, 100, 50); // Upper foliage
+        context.fillRect(600, 150, 50, 50);  // Top foliage
+    }
+  </script>
+</head>
+<body>
+   <canvas id="micanvas" width="800" height="600"></canvas>
+</body>
+</html>

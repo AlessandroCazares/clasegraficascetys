@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pagina 3</title>
+  <style>
+    canvas {
+      border: 1px solid white;
+      background-color: blue;
+    }
+  </style>
+  <script>
+    var x = 300 + Math.random() * 100;
+    var y = 200 + Math.random() * 100;
+    var dx = 4;
+    var dy = 4;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      var canvas = document.getElementById("micanvas");
+      var context = canvas.getContext("2d");
+
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Logo
+      context.font = 'Bold 40pt Calibri';
+      context.fillStyle = 'white';
+      context.fillText('DVD', x, y);
+      context.fillStyle = 'white';
+      context.fillRect(x, y + 3, 99, 10);
+
+      // Colisión
+      if (x + dx > canvas.width - 99 || x + dx < 0) dx = -dx;
+      if (y + dy > canvas.height || y + dy < 39 ) dy = -dy;
+
+      // Aplicar
+      x += dx;
+      y += dy;
+    }
+
+    animate();
+  </script>
+</head>
+<body>
+  <canvas id="micanvas" width="800" height="600"></canvas>
+</body>
+</html>
