@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brújula Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <svg id="svgLinea" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 9;">
+        <line id="linea" x1="0" y1="0" x2="0" y2="0" style="stroke: red; stroke-width: 7; stroke-dasharray: 10, 10"/>
+    </svg>
+    <div id="brujula">
+        <img src="https://pbs.twimg.com/ext_tw_video_thumb/1409328114942070790/pu/img/KXO9mYRbvDslUdFe.jpg" alt="Brújula" id="imagenBrujula">
+    </div>
+    <img id="imagenCursor"
+         src="https://minmax.wiki/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fminmax-assets%2Fisaac%2Fitems%2Fmarked_81b716a1-a36b-11eb-b593-4be5d995c630.png&w=1920&q=75">
+
+    <script src="script.js"></script>
+</body>
+</html>
