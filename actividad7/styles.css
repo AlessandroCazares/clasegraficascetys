@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image:  url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/07/risk-of-rain-2-launch-update.jpg");
+    background-size: 100% auto;
+  }
+  .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #gameCanvas {
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .game-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    color: #ffbb00;
+    text-shadow: 8px 3px #000000;
+  }
+  
