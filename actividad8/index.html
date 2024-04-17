@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 - Paint App personalizado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4a9b561aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="colores">
+            <button id="black" type="button" value="#000000"> <i class="fa-solid fa-paintbrush"></i> Black</button>
+            <button id="red" type="button" value="#ff0000"> <i class="fa-solid fa-paintbrush"></i> Red</button>
+            <button id="green" type="button" value="#00ff00"> <i class="fa-solid fa-paintbrush"></i> Green</button>
+            <button id="blue" type="button" value="#0000ff"> <i class="fa-solid fa-paintbrush"></i> Blue</button>
+            <button id="yellow" type="button" value="#ffff00"> <i class="fa-solid fa-paintbrush"></i> Yellow</button>
+        </div>
+        <div id="drawing-area" class="drawing-area">
+            <canvas id="canvas" width="400" height="400"></canvas>
+            <div class="grosores">
+                <button id="delgado" type="button" value="2">2px</button>
+                <button id="medio" type="button" value="5">5px</button>
+                <button id="grueso" type="button" value="8">8px</button>
+                <button id="borrar" type="button"> <i class="fa-solid fa-eraser"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

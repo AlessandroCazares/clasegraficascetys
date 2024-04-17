@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#drawing-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 420px;
+}
+
+canvas {
+    box-shadow: 0 2px 6px rgba(0, 125, 139, 0.3);
+}
+
+button {
+    width: 76px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#black { background-color: #333; }
+#red { background-color: #E53E3E; }
+#green { background-color: #38A169; }
+#blue { background-color: #3182CE; }
+#yellow { background-color: #D69E2E; }
+#borrar {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.grosores button {
+    margin-left: 10px;
+    background-color: slategray;
+    width: 40px;
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 125, 139, 0.3);
+}
